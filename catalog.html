@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог — KuzPotato</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container header__inner">
+            <a href="index.html" class="logo">
+                <span class="logo__text">Kuz<span class="logo__accent">Potato</span></span>
+            </a>
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Главная</a></li>
+                    <li><a href="catalog.html" class="nav__link nav__link--active">Каталог</a></li>
+                    <li><a href="about.html" class="nav__link">О компании</a></li>
+                    <li><a href="delivery.html" class="nav__link">Доставка</a></li>
+                    <li><a href="contacts.html" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header__actions">
+                <a href="cart.html" class="cart-icon" id="cartIcon" aria-label="Корзина">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                    </svg>
+                    <span class="cart-icon__badge" id="cartBadge">0</span>
+                </a>
+                <button class="burger" id="burger" aria-label="Меню">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero page-hero--catalog">
+            <div class="container">
+                <h1 class="page-hero__title">Каталог картофеля</h1>
+                <p class="page-hero__subtitle">Отборные сорта с полей Кузбасса</p>
+            </div>
+        </section>
+
+        <section class="section catalog-section">
+            <div class="container">
+                <div class="catalog__filters" id="catalogFilters">
+                    <button class="filter-btn filter-btn--active" data-filter="all">Все сорта</button>
+                    <button class="filter-btn" data-filter="premium">Премиум</button>
+                    <button class="filter-btn" data-filter="universal">Универсальные</button>
+                    <button class="filter-btn" data-filter="early">Ранние</button>
+                    <button class="filter-btn" data-filter="farm">Фермерские</button>
+                </div>
+                <div class="catalog__grid" id="catalogGrid">
+                    <!-- Filled by JS -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__col">
+                <div class="logo logo--footer">
+                    <span class="logo__text">Kuz<span class="logo__accent">Potato</span></span>
+                </div>
+                <p class="footer__desc">Премиальная фермерская картошка из Кемерово. Качество, проверенное землёй.</p>
+            </div>
+            <div class="footer__col">
+                <h4 class="footer__title">Навигация</h4>
+                <ul class="footer__links">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="about.html">О компании</a></li>
+                    <li><a href="delivery.html">Доставка</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4 class="footer__title">Контакты</h4>
+                <ul class="footer__links footer__links--contacts">
+                    <li>Кемерово, Кузбасс</li>
+                    <li>+7 (3842) 00-00-00</li>
+                    <li>info@kuzpotato.ru</li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4 class="footer__title">Режим работы</h4>
+                <ul class="footer__links">
+                    <li>Пн–Пт: 8:00 – 19:00</li>
+                    <li>Сб: 9:00 – 17:00</li>
+                    <li>Вс: выходной</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom container">
+            <p>&copy; 2025 KuzPotato. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

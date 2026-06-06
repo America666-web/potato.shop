@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О компании — KuzPotato</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container header__inner">
+            <a href="index.html" class="logo">
+                <span class="logo__text">Kuz<span class="logo__accent">Potato</span></span>
+            </a>
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Главная</a></li>
+                    <li><a href="catalog.html" class="nav__link">Каталог</a></li>
+                    <li><a href="about.html" class="nav__link nav__link--active">О компании</a></li>
+                    <li><a href="delivery.html" class="nav__link">Доставка</a></li>
+                    <li><a href="contacts.html" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header__actions">
+                <a href="cart.html" class="cart-icon" id="cartIcon" aria-label="Корзина">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                    </svg>
+                    <span class="cart-icon__badge" id="cartBadge">0</span>
+                </a>
+                <button class="burger" id="burger" aria-label="Меню">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero page-hero--about">
+            <div class="container">
+                <h1 class="page-hero__title">О компании KuzPotato</h1>
+                <p class="page-hero__subtitle">История качества с корнями в сибирской земле</p>
+            </div>
+        </section>
+
+        <section class="section about-story">
+            <div class="container">
+                <div class="about-story__grid">
+                    <div class="about-story__content">
+                        <span class="section__tag">Наша история</span>
+                        <h2 class="section__title">Рождено в Кузбассе</h2>
+                        <p>KuzPotato — это семейное фермерское хозяйство, основанное в Кемерово. На протяжении многих лет мы выращиваем картофель на плодородных почвах Кузбасса, combining традиционные методы земледелия с современными агротехнологиями.</p>
+                        <p>Наш основатель — <strong>Шарова Наталья</strong>, потомственный фермер, чья семья обрабатывает эту землю уже в третьем поколении. Под её руководством небольшое хозяйство превратилось в современный бренд, известный качеством своей продукции далеко за пределами региона.</p>
+                        <p>Сегодня KuzPotato — это не просто картофель. Это философия ответственного земледелия, где каждый клубень — результат кропотливого труда, заботы о почве и уважения к природным циклам.</p>
+                    </div>
+                    <div class="about-story__visual">
+                        <div class="about-story__image-placeholder"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--alt about-values">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__tag">Наши ценности</span>
+                    <h2 class="section__title">Что стоит за каждым клубнем</h2>
+                </div>
+                <div class="about-values__grid">
+                    <div class="value-card">
+                        <h3>Традиции</h3>
+                        <p>Мы чтим опыт поколений. Методы обработки земли, передаваемые в семье Шаровых, сочетаются с научным подходом к агрономии.</p>
+                    </div>
+                    <div class="value-card">
+                        <h3>Честность</h3>
+                        <p>Никаких скрытых обработок и химических ускорителей. Только натуральные удобрения и открытая информация о происхождении продукта.</p>
+                    </div>
+                    <div class="value-card">
+                        <h3>Качество</h3>
+                        <p>Ручная переборка, строгий отбор по размеру и внешнему виду, современные хранилища — мы контролируем качество на каждом этапе.</p>
+                    </div>
+                    <div class="value-card">
+                        <h3>Забота</h3>
+                        <p>Забота о земле, о сотрудниках, о клиентах. Мы строим долгосрочные отношения, основанные на доверии и взаимном уважении.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section about-founder-detail">
+            <div class="container about-founder-detail__inner">
+                <div class="about-founder-detail__portrait">
+                    <div class="founder__portrait-placeholder founder__portrait-placeholder--large">
+                        <span>Наталья Шарова</span>
+                    </div>
+                </div>
+                <div class="about-founder-detail__content">
+                    <span class="section__tag">Основатель</span>
+                    <h2 class="section__title">Шарова Наталья</h2>
+                    <p>Родилась и выросла в Кемерово, в семье фермеров. С детства знала цену труду на земле. Получила агрономическое образование и вернулась в родное хозяйство с твёрдым намерением вывести семейный бизнес на новый уровень.</p>
+                    <p>«Картофель — это душа русского стола. И я хочу, чтобы на каждом столе была только лучшая картошка, выращенная с любовью и уважением к земле», — говорит Наталья.</p>
+                    <p>Под её руководством KuzPotato внедрил современные стандарты хранения, логистики и упаковки, сохранив при этом аутентичный вкус и качество, за которые так ценят продукцию бренда.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__col">
+                <div class="logo logo--footer">
+                    <span class="logo__text">Kuz<span class="logo__accent">Potato</span></span>
+                </div>
+                <p class="footer__desc">Премиальная фермерская картошка из Кемерово. Качество, проверенное землёй.</p>
+            </div>
+            <div class="footer__col">
+                <h4 class="footer__title">Навигация</h4>
+                <ul class="footer__links">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="about.html">О компании</a></li>
+                    <li><a href="delivery.html">Доставка</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4 class="footer__title">Контакты</h4>
+                <ul class="footer__links footer__links--contacts">
+                    <li>Кемерово, Кузбасс</li>
+                    <li>+7 (3842) 00-00-00</li>
+                    <li>info@kuzpotato.ru</li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4 class="footer__title">Режим работы</h4>
+                <ul class="footer__links">
+                    <li>Пн–Пт: 8:00 – 19:00</li>
+                    <li>Сб: 9:00 – 17:00</li>
+                    <li>Вс: выходной</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom container">
+            <p>&copy; 2025 KuzPotato. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
